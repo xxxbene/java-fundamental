@@ -83,10 +83,27 @@ public class Perulangan {
             }
         }
 
-
         boolean isAccountLocked = false;
+        int count = 3;
+
+        if (count == 3) {
+            isAccountLocked = true;
+        }
+
+        System.out.println(isAccountLocked);
 
 
-
+        int num = 0;
+        int sum = 0;
+        while (num < 10) {
+            if (num % 2 == 1) {
+                System.out.print(num);
+                sum += num;
+                if (num > 6) break;
+            }
+            num++;
+        }
+        System.out.println();
+        System.out.println(sum);
     }
 }
